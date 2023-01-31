@@ -86,7 +86,7 @@ export async function processRosetta(req, handleTable): Promise<rosetta> {
         // Handle dynamic path
         //------------------------------------------------------------------------------------------
         if (singleRequest.request.url.data && singleRequest.request.url.data.length !== 0) {
-          singleRequest.request.url.data.forEach((x, index) => {
+          singleRequest.request.url.data.forEach((x) => {
             if (x.mode === 'path') {
               request.path = request.path.replace(x.position, rosettaObject.matchString[x.data]);
             } else if (x.mode === 'jsonpath') {

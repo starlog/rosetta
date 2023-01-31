@@ -8,7 +8,6 @@ REST API Translation engine
 
 ```json
 { 
-    "_id" : ObjectId("63d8786b8dccd24378b4ec2e"), 
     "host" : "wash-api-trans.washswat.com", 
     "method" : "POST", 
     "url" : "/openapi/order/time/delivery$", 
@@ -119,7 +118,6 @@ request.url.data: 호출할 실 기능 서버의 url에 동적 데이터가 포�
 
 ```json
 { 
-    "_id" : ObjectId("63d8786b8dccd24378b4ec2e"), 
     "host" : "wash-api-trans.washswat.com", 
     "method" : "POST", 
     "url" : "/openapi/(.+)/time/delivery$", 
@@ -280,7 +278,7 @@ Response.return이 존재하는 경우에는 호출한 클라이언트에 리턴
     "process" : [
         {
             "sequence" : 0.0, 
-            "note" : "가장 기본적인 호출 예저", 
+            "note" : "가장 기본적인 호출 예", 
             "request" : {
                 "targetServer" : "http://wash-api.washswat.internal:8000", 
                 "method" : "POST", 
@@ -311,7 +309,3 @@ Response.return이 존재하는 경우에는 호출한 클라이언트에 리턴
     ]
 }
 ```
-
-## Code Repository:
-
-[](https://gitlab.washswat.com/felix/wash-api-trans-version-2-rosetta)
